@@ -1,6 +1,6 @@
 %scala
 
-// example for Store_sales
+// example of Store_sales
 
 import com.databricks.spark.sql.perf.tpcds.TPCDSTables
 
