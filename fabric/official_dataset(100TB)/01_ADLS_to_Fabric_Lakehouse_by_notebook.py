@@ -21,5 +21,6 @@ df.write.mode("overwrite").format("delta").save("Tables/Table_name")
 df = spark.read.parquet("Files/tpcds-sf100tcl/<Table_name>/part-00*.parquet") 
 df.write.mode("append").format("delta").save("Tables/store_sales")
 
-df = spark.read.parquet("Files/tpcds-sf100tcl/<Table_name>/part-01~5*.parquet") 
+# part01~24まで以下を例に作成する。
+df = spark.read.parquet("Files/tpcds-sf100tcl/<Table_name>/part-01*.parquet") 
 df.write.mode("append").format("delta").save("Tables/store_sales")
