@@ -21,7 +21,7 @@ MAX_FILE_SIZE = 1073741824
 
   ---------------------------分割Template1------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/1/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -36,7 +36,7 @@ MAX_FILE_SIZE = 1073741824
 
 ---------------------------2------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/2/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -52,7 +52,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------3------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/3/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -68,7 +68,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------4------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/4/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -84,7 +84,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------5------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/5/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -101,7 +101,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------6------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/6/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
  
@@ -117,7 +117,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------7------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/7/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -134,7 +134,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------8------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/8/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
 
@@ -151,10 +151,9 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------9------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/9/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
-
  
   
 COPY INTO @my_ext_unload_stage9 from (
@@ -168,7 +167,7 @@ MAX_FILE_SIZE = 1073741824
  
 ---------------------------10------------------------------
 CREATE OR REPLACE STAGE my_ext_unload_stage<任意の数字>
-  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/10/<作りたいテーブル名（新規でフォルダが作成される）>'
+  URL='azure://<ストレージ名>.blob.core.windows.net/<フォルダ名>/<作りたいテーブル名（新規でフォルダが作成される）>/<数字>/*parquet'
   CREDENTIALS=(AZURE_SAS_TOKEN=' <your token> '
    ;
  
