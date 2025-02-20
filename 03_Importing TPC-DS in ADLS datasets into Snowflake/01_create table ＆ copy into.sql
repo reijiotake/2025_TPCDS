@@ -27,3 +27,9 @@ COPY INTO catalog_page
   FROM @catalog_page_stage3
   PATTERN='.*\.parquet'
    MATCH_BY_COLUMN_NAME = 'CASE_INSENSITIVE';
+
+
+
+---参考リンク
+---https://docs.snowflake.com/ja/sql-reference/sql/copy-into-table#examples
+---https://docs.snowflake.com/ja/sql-reference/sql/create-stage#optional-parameters
