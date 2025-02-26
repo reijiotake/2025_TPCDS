@@ -533,7 +533,7 @@ INSERT INTO catalog_returns
 SELECT * FROM catalog_returns_old;
 
 
-----store_returns----
+----store_returns-- (7 min 54 sec 754 ms)--
 CREATE TABLE [ WH_FabricPerformance_snow100].[dbo].[store_returns]
 (
 	[sr_returned_date_sk] [int] NULL,
